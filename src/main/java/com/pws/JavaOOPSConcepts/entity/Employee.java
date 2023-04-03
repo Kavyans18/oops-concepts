@@ -1,22 +1,24 @@
 package com.pws.JavaOOPSConcepts.entity;
 
 import lombok.Data;
+import net.bytebuddy.dynamic.loading.ClassReloadingStrategy;
+import org.springframework.validation.annotation.Validated;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.Email;
 
 @Entity
 @Table(name = "Employee")
+@Validated
 public class Employee {
     @Id
     private int employeeId;
     @Column(name = "employeeName", nullable = false)
     private String employeeName;
     @Column(name = "employeeEmail", nullable = false)
+    @Email(message = "ENTER VALID EMAIL")
     private String employeeEmail;
-    @Column(name = "employeePhoneNumber", nullable = false)
+    @Column(name = "employeePhoneNumber", nullable = false, length = 13)
     private long employeePhoneNumber;
 
     public int getEmployeeId() {

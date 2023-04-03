@@ -8,6 +8,5 @@ public class JavaOopsConceptsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaOopsConceptsApplication.class, args);
-
 	}
 }

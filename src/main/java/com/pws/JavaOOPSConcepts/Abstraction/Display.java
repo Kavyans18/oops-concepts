@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface Display {
 
-    abstract ResponseEntity<List<Employee>> display();
+     ResponseEntity<List<Employee>> display();
 }

@@ -1,4 +1,4 @@
-package com.pws.JavaOOPSConcepts.repository;
+package com.pws.JavaOOPSConcepts.inheretace;
 
 import com.pws.JavaOOPSConcepts.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

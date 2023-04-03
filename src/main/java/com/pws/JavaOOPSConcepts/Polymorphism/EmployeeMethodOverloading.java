@@ -2,9 +2,8 @@ package com.pws.JavaOOPSConcepts.Polymorphism;
 
 import com.pws.JavaOOPSConcepts.entity.Employee;
 import com.pws.JavaOOPSConcepts.exception.EmailNotFoundException;
-import com.pws.JavaOOPSConcepts.exception.NoDataAvailableException;
 import com.pws.JavaOOPSConcepts.exception.PhoneNumberNotFoundException;
-import com.pws.JavaOOPSConcepts.repository.EmployeeRepository;
+import com.pws.JavaOOPSConcepts.inheretace.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
